@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>click demo</title>
+  <style>
+  p {
+    color: red;
+    margin: 5px;
+    cursor: pointer;
+  }
+  p:hover {
+    background: yellow;
+  }
+  </style>
+  <script src="jquery.js"></script>
+</head>
+<body>
+<button id="self">My Name</button>
+<div id="my" style="display:none;">Saravana pandi</div>
+<button id="wi">Spose Name</button>
+<div id="wife" style="display:none;">Yogeshwari</div>
+<button id="pa">Daughter Name</button>
+<div id="dau" style="display:none;">Kavi nila</div>
+ 
+<script>
+$( "#self" ).click(function() {
+ $("#my").show();
+});
+$( "#wi" ).click(function() {
+ $("#wife").show();
+});
+$( "#pa" ).click(function() {
+ $("#dau").show();
+});
+</script>
+ 
+</body>
+</html>
